@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Giá Vàng Kim Long Đồng Tháp - Trực Tuyến & Tại Quầy</title>
+    <meta name="description" content="Theo dõi trực tuyến bảng giá vàng Kim Long Đồng Tháp tại quầy hôm nay. Dữ liệu nhúng trực tiếp, cập nhật liên tục nhanh chóng và chính xác.">
+    <meta name="keywords" content="gia vang kim long, bang gia vang kim long, vang kim long dong thap">
+    
+    <style>
+        :root {
+            --primary-color: #d4af37; /* Vàng Gold */
+            --dark-color: #1a1a1a;
+            --bg-color: #f5f5f7;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--dark-color);
+            color: #fff;
+            text-align: center;
+            padding: 25px 15px;
+            border-bottom: 4px solid var(--primary-color);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 8px 0 0 0;
+            font-style: italic;
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        /* Menu điều hướng nhanh */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 0 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--card-bg);
+            color: #555;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        /* Khu vực hiển thị Bảng Giá */
+        .price-dashboard {
+            max-width: 1300px;
+            margin: 0 auto padding;
+            padding: 0 15px 40px 15px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Mặc định chia 2 cột trên PC */
+            gap: 25px;
+        }
+
+        .price-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            overflow: hidden;
+            border-top: 4px solid var(--primary-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: #fff;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Tối ưu hóa cho Iframe khung nhúng */
+        .iframe-wrapper {
+            position: relative;
+            width: 100%;
+            height: 700px; /* Chiều cao lý tưởng trên PC */
+            background: #fff;
+        }
+
+        .iframe-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px 15px;
+            background-color: var(--dark-color);
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* ====== CẤU HÌNH RESPONSIVE (MOBILES & TABLETS) ====== */
+        @media (max-width: 992px) {
+            .price-dashboard {
+                grid-template-columns: 1fr; /* Chuyển thành 1 cột dọc trên Mobile */
+                gap: 20px;
+            }
+            
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .iframe-wrapper {
+                height: 550px; /* Thu bớt chiều cao trên điện thoại để dễ cuộn trang */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TIỆM VÀNG KIM LONG ĐỒNG THÁP</h1>
+        <p>"Vàng Đã Quý, Uy Tín Còn Quý Hơn"</p>
+    </header>
+
+    <div class="nav-buttons">
+        <a href="index.html" class="btn">🏠 Trang Chủ</a>
+        <a href="https://giavangkimlong.com/" target="_blank" rel="noopener" class="btn">🌐 Website Chính Thức</a>
+        <a href="javascript:location.reload();" class="btn">🔄 Làm Mới Giá (F5)</a>
+    </div>
+
+    <main class="price-dashboard">
+        
+        <section class="price-card">
+            <div class="card-header">
+                📊 Bảng Giá Vàng Trực Tuyến (Website)
+            </div>
+            <div class="iframe-wrapper">
+                <iframe src="https://bg2.kimlongdongthap.vn/BangGiaWEB.aspx" title="Bảng Giá Vàng Trực Tuyến Kim Long"></iframe>
+            </div>
+        </section>
+
+        <section class="price-card">
+            <div class="card-header">
+                🏪 Bảng Giá Vàng Thực Tế Tại Quầy
+            </div>
+            <div class="iframe-wrapper">
+                <iframe src="https://bg2.kimlongdongthap.vn/BangGiaTaiQuay.aspx" title="Bảng Giá Vàng Tại Quầy Kim Long"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© Hệ thống đối chiếu Giá Vàng Kim Long Đồng Tháp - MST: 1400587063</p>
+        <p>Xem chi tiết nguồn dữ liệu gốc tại: <a href="https://giavangkimlong.com/bang-gia-vang/" target="_blank" rel="noopener">giavangkimlong.com/bang-gia-vang/</a></p>
+    </footer>
+
+</body>
+</html>
